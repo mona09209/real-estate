@@ -1,0 +1,100 @@
+.blog{
+    padding: 50px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+     @include media-up(md){
+          padding-right: 0;
+    padding-left: 0;
+    }
+    .all-blogs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+        
+        .blog-card{
+            background-color: #fff;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            transition: 0.4s;
+            cursor: pointer;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+            &:hover{
+                scale: 1.03;
+            }
+            .image{
+                position: relative;
+                
+                .blog-category{
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    background-color: $secondary-color;
+                    color: #fff;
+                    padding: 5px 12px;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    font-family: Almarai;
+                }
+                img{
+                    @include img(100%, 300px);
+                }
+            }
+            .info{
+                padding: 15px;
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    color: $main-color;
+                    font-family: Almarai;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+               hr{
+                
+                margin: auto;
+                margin-bottom: 15px;
+                height: 0.5px;
+                background-color: #eee;
+                border: none;
+                width: 90%;
+               }
+               .blog-footer{
+                @include flexbox(space-between, center);
+                font-size: 12px;
+                .author{
+                    font-weight: bold;
+                    @include flexbox(center, center);
+                    gap: 10px;
+                    color: $main-color;
+                    .author-img{
+                       @include image(50px, 50px);
+                       border: 2px solid $main-color;
+                        border-radius: 50%;
+                        img{
+                            @include img();
+                        }
+                    }
+                }
+                button{
+                    background-color: $main-color;
+                    color: #fff;
+                    padding: 8px 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    transition: background-color 0.3s ease;
+                    &:hover{
+                        background-color: lighten($main-color, 5%);
+                    }
+                }
+               }
+            }
+        }
+
+    }
+}

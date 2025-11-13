@@ -1,0 +1,104 @@
+.about {
+    padding: 50px 0;
+    position: relative;
+
+    &.about::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        @include bg-img(url('../../assets/img/backgrounds/1.jpg'));
+        opacity: 0.150;
+        z-index: -1;
+    }
+
+    .inner-about {
+        @include flexbox(center, center, column);
+          
+        @include media-up(md) {
+            flex-direction: row;
+        }
+
+        gap: 20px;
+
+        .right-section {
+            @include media-up(md) {
+                width: 50%;
+            }
+
+            ul {
+                margin-top: 20px;
+                margin-bottom: 40px;
+
+                li {
+                    color: $main-color;
+                    @include media-up(md) {
+                        color: $font-color;
+                        
+                    }
+
+                    position: relative;
+                    margin-bottom: 10px;
+                    border-bottom: 1px dotted $background-color;
+                    width: fit-content;
+                    margin-right: 25px;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+
+                    @include media-up(md) {
+                        font-size: $font-size-base;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "\f058";
+                        color: $main-color;
+                        font-weight: bold;
+                        right: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-family: "Font Awesome 5 Free";
+                    }
+
+                }
+            }
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: $main-color;
+                font-family: Almarai;
+
+                @include media-up(md) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                color: $font-color;
+                @include media-up(md) {
+                    width: 90%;
+                }
+            }
+        }
+
+        .left-section {
+            margin-top: 30px;
+
+            @include media-up(md) {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+
+
+    }
+}

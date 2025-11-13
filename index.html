@@ -1,0 +1,707 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logo.png" width="80px" alt=""></a>
+            </div>
+
+            <ul class="menu">
+                <li class=""><a href="/">الرئيسية</a></li>
+                <li><a href="#">العقارات</a></li>
+                <li><a href="#">عن الشركة</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">المدونة</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li class="mode"> <a href=""> <i class="fa-solid fa-moon"></i></a></li>
+
+            </ul>
+            <div class="icons">
+
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <i class="fa-solid fa-bars-staggered mobile-nav-icon" id="mobile-nav-icon"></i>
+
+        </nav>
+    </header>
+
+    <aside id="aside">
+        <div class="mobile-menu">
+          
+
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">العقارات</a></li>
+                <li><a href="#">عن الشركة</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">المدونة</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+
+            <form action="">
+                <input type="search" placeholder="بحث">
+            </form>
+
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <div class="cta">
+                <a href="#" class="btn-danger">تواصل معنا</a>
+                <a href="#" class="btn-danger">المزيد</a>
+            </div>
+
+        </div>
+    </aside>
+
+    <section>
+        <div class="hero">
+            <div class="overlay"></div>
+            <div class="hero-info">
+                <h1>سودا هاوس — كل العروض العقارية في مكان واحد</h1>
+                <p>
+                    ابحث عن شقتك أو منزلك المثالي من بين مئات الإعلانات من مواقع ومكاتب عقارية مختلفة في مكان واحد.
+                    سهل، سريع، وذكي.
+                </p>
+
+
+                <form action="#">
+                    <div class="search-area">
+
+                        <!-- نوع العملية -->
+                        <div class="search">
+                            <select name="property_type" id="property_type">
+                                <option value="" disabled selected>اختر نوع العملية</option>
+                                <option value="rent">إيجار</option>
+                                <option value="sale">بيع</option>
+                                <option value="buy">شراء</option>
+                            </select>
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <!-- نوع العقار -->
+                        <div class="search">
+                            <select name="property_category" id="property_category">
+                                <option value="" disabled selected>نوع العقار</option>
+                                <option value="apartment">شقة</option>
+                                <option value="house">منزل</option>
+                                <option value="villa">فيلا</option>
+                                <option value="land">أرض</option>
+                                <option value="office">مكتب</option>
+                                <option value="store">محل تجاري</option>
+                            </select>
+                            <i class="fa-solid fa-home"></i>
+                        </div>
+
+                        <!-- المدينة -->
+                        <div class="search">
+                            <select name="city" id="city">
+                                <option value="" disabled selected>اختر المدينة</option>
+                                <option value="khartoum">الخرطوم</option>
+                                <option value="omdurman">أم درمان</option>
+                                <option value="bahri">بحري</option>
+                                <option value="madani">ود مدني</option>
+                                <option value="portsudan">بورتسودان</option>
+                                <option value="kassala">كسلا</option>
+                                <option value="gedaref">القضارف</option>
+                                <option value="sennar">سنار</option>
+                                <option value="rabak">ربك</option>
+                                <option value="atbara">عطبرة</option>
+                                <option value="dongola">دنقلا</option>
+                                <option value="elobied">الأبيض</option>
+                                <option value="nyala">نيالا</option>
+                                <option value="elfasher">الفاشر</option>
+                                <option value="kadugli">كادوقلي</option>
+                                <option value="damazin">الدمازين</option>
+                                <option value="merowe">مروي</option>
+                            </select>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <!-- المنطقة -->
+                        <div class="search">
+                            <input type="text" name="area" placeholder="اكتب اسم المنطقة (مثلاً: كافوري، العمارات...)">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                        </div>
+
+                        <!-- عدد الغرف -->
+                        <div class="search">
+                            <input type="number" name="rooms" placeholder="عدد الغرف">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- السعر الأنسب -->
+                        <div class="search">
+                            <select name="price_range" id="price_range">
+                                <option value="" disabled selected>اختر السعر الأنسب</option>
+                                <option value="low">منخفض (الأرخص أولاً)</option>
+                                <option value="medium">متوسط</option>
+                                <option value="high">مرتفع (الأفخم أولاً)</option>
+                            </select>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+
+                        <!-- زر البحث -->
+                        <div class="search">
+                            <button type="submit" class="btn-danger">
+                                قارن العروض الآن
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="container inner-about">
+
+            <div class="right-section">
+                <h2>لماذا تختار منصة سودا-هاوس العقارية؟</h2>
+                <p>
+                    في <strong>سودا-هاوس</strong>، ما بنبيع ولا نؤجر، نحن بنسهّل عليك الطريق للوصول للعقار المناسب.
+                    منصتنا تجمع عروض البيع، الإيجار، والشراء من مكاتب ومواقع مختلفة في السودان، وتعرضها ليك في مكان واحد
+                    للمقارنة بسهولة وشفافية.
+                </p>
+                <ul>
+                    <li>مقارنة فورية بين الأسعار والعروض من مختلف المصادر</li>
+                    <li>تغطية شاملة لكل المدن والمناطق في السودان</li>
+                    <li>بحث ذكي يسمح لك بتحديد الموقع، السعر، وعدد الغرف</li>
+                    <li>منصة حديثة وسهلة الاستخدام بتجربة تصفح سلسة</li>
+                    <li>عروض محدثة يوميًا لضمان دقة النتائج</li>
+                    <li>شفافية كاملة في التفاصيل، من الصور وحتى الأسعار</li>
+                </ul>
+                <a href="#" class="btn">ابدأ البحث الآن</a>
+            </div>
+
+            <div class="left-section">
+                <img src="assets/img/backgrounds/about-img.png" alt="منصة سودا-هاوس العقارية">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="products">
+
+        <h2 class="section-title">كافة العقارات</h2>
+        <p class="section-description">
+            اكتشف أحدث العقارات في السودان، سواء كنت تبحث عن منزل أحلامك، شقة للإيجار، أو فرصة استثمارية مميزة.
+            منصة <strong>سودا-هاوس</strong> تجمع لك كل العروض في مكان واحد لتسهيل المقارنة واختيار الأفضل.
+        </p>
+
+        <div class="container swiper">
+            <div class="swiper-wrapper">
+
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <span class="offer">عرض مميز</span>
+                        <div class="image">
+                            <img src="assets/img/b.jpg" alt="فيلا فاخرة للبيع">
+                        </div>
+                        <div class="info">
+                            <span class="category">فيلا</span>
+                            <h3>فيلا فاخرة للبيع</h3>
+                            <span class="location">السودان - الخرطوم - الرياض</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 5</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 4</span></li>
+                            <li><span>مسبح:</span> <span><i class="fa-solid fa-water-ladder"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> 2</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <span class="offer">عرض جديد</span>
+                        <div class="image">
+                            <img src="assets/img/88.jpg" alt="فيلا حديثة للبيع">
+                        </div>
+                        <div class="info">
+                            <span class="category">فيلا</span>
+                            <h3>فيلا حديثة للبيع</h3>
+                            <span class="location">السودان - بورتسودان - حي النزهة</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 6</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 5</span></li>
+                            <li><span>مسبح:</span> <span><i class="fa-solid fa-water-ladder"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> 2</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <span class="offer">عرض مميز</span>
+                        <div class="image">
+                            <img src="assets/img/99.jpg" alt="شقة عصرية للإيجار">
+                        </div>
+                        <div class="info">
+                            <span class="category">شقة</span>
+                            <h3>شقة عصرية للإيجار</h3>
+                            <span class="location">السودان - الخرطوم - حي الرياض</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 3</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 2</span></li>
+                            <li><span>شرفة:</span> <span><i class="fa-solid fa-mountain-sun"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> 1</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+
+
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <div class="image">
+                            <img src="assets/img/apart.jpg" alt="شقة عصرية للإيجار">
+                        </div>
+                        <div class="info">
+                            <span class="category">شقة</span>
+                            <h3>شقة عصرية للإيجار</h3>
+                            <span class="location">السودان - بورتسودان - حي المطار</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 3</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 2</span></li>
+                            <li><span>شرفة:</span> <span><i class="fa-solid fa-mountain-sun"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> 1</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <span class="offer">عرض مميز</span>
+                        <div class="image">
+                            <img src="assets/img/ff.jpg" alt="منزل عائلي للبيع">
+                        </div>
+                        <div class="info">
+                            <span class="category">بيت</span>
+                            <h3>منزل عائلي للبيع</h3>
+                            <span class="location">السودان - مدني - حي السوق</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 4</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 3</span></li>
+                            <li><span>حديقة:</span> <span><i class="fa-solid fa-tree"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> 1</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+
+                <a href="single-product.html" class="swiper-slide">
+                    <div class="product">
+                        <div class="image">
+                            <img src="assets/img/ss.jpg" alt="استوديو مفروش للإيجار">
+                        </div>
+                        <div class="info">
+                            <span class="category">استوديو</span>
+                            <h3>استوديو مفروش للإيجار</h3>
+                            <span class="location">السودان - سواكن - الكورنيش</span>
+                            <hr>
+                        </div>
+                        <ul class="props">
+                            <li><span>غرف:</span> <span><i class="fa-solid fa-bed"></i> 1</span></li>
+                            <li><span>حمامات:</span> <span><i class="fa-solid fa-bath"></i> 1</span></li>
+                            <li><span>مكيف:</span> <span><i class="fa-solid fa-fan"></i> نعم</span></li>
+                            <li><span>مطبخ:</span> <span><i class="fa-solid fa-kitchen-set"></i> صغير</span></li>
+                        </ul>
+                        <button class="btn-primary send">تفاصيل العقار</button>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="btn-controls">
+                <div class="btn-prev">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="btn-next">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="gellary">
+        <h2 class="section-title">معرض أعمالنا</h2>
+        <p class="section-description">
+            استعرض مجموعة مختارة من الصور التي تبرز جمال وتنوع العقارات التي نقدمها في سودا هاوس العقارية.
+        </p>
+        <div class="container all-images">
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/1.jpg">
+                    <img src="assets/img/gellary/1.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/5.jpg">
+                    <img src="assets/img/gellary/5.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/3.jpg">
+                    <img src="assets/img/gellary/3.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/10.jpg">
+                    <img src="assets/img/gellary/10.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/9.jpg">
+                    <img src="assets/img/gellary/9.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/7.jpg">
+                    <img src="assets/img/gellary/7.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/gallery.jpg">
+                    <img src="assets/img/gellary/gallery.jpg" alt="">
+                </a>
+            </div>
+            <div class="image">
+                <a data-fancybox="gallery" href="assets/img/gellary/11.jpg">
+                    <img src="assets/img/gellary/11.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title"> اراء العملاء</h2>
+        <div class="container all-testimonial">
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/profiles/prof-1.png" alt="منير عبد الله">
+                </div>
+                <h3>منير عبد الله</h3>
+                <p class="jop">رجل أعمال</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="review">
+                    "منصة سودا-هاوس سهلت عليّ مقارنة العقارات بسرعة، لقيت البيت المناسب لعائلتي بسهولة وراحة. أنصح أي
+                    زول يبحث عن عقار يجرب سودا-هاوس."
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/profiles/prof-2.png" alt="سارة النور">
+                </div>
+                <h3>سارة النور</h3>
+                <p class="jop">مهندسة معمارية</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review">
+                    "تجربة ممتازة! لقيت شقتي المثالية بسرعة وبسعر مناسب، وكل شيء واضح وشفاف على المنصة."
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/profiles/prof.png" alt="آمنة الطيب">
+                </div>
+                <h3>آمنة الطيب</h3>
+                <p class="jop">طبيبة</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="review">
+                    "سود-هاوس ساعدتني ألقى منزل قريب من المستشفى اللي أشتغل فيه، بسرعة وسهولة. تجربة رائعة وموثوقة."
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/profiles/prof-4.png" alt="محمد الحاج">
+                </div>
+                <h3>محمد الحاج</h3>
+                <p class="jop">محاسب</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review">
+                    "أسعار العقارات واضحة والمقارنة سهلة جدًا على سود-هاوس خدمتهم سريعة وتجربة موثوقة."
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="partners">
+        <h2 class="section-title">شركاؤنا </h2>
+
+        <div class="container logos">
+            <div class="image">
+                <img src="assets/img/logos/1.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/logos/2.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/logos/3.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/logos/4.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/logos/6.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/logos/7.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2 class="section-title">اخر الاخبار</h2>
+        <p class="section-description">
+            تابع أهم الأخبار والتقارير العقارية في السودان، واحصل على نصائح تساعدك في اختيار أفضل العقارات للاستثمار أو
+            السكن.
+        </p>
+        <div class="container all-blogs">
+
+            <a href="single-blog.html">
+                <div class="blog-card">
+                    <div class="image">
+                        <p class="blog-category">التمويل العقاري</p>
+                        <img src="assets/img/6.jpg" alt="تمويل عقاري في السودان">
+                    </div>
+                    <div class="info">
+                        <h3>كيف تحصل على تمويل عقاري مناسب؟</h3>
+                        <p>تعرف على شروط التمويل العقاري في البنوك السودانية واكتشف كيفية اختيار العرض الأنسب لميزانيتك
+                            وخططك المستقبلية.</p>
+                        <hr>
+                        <div class="blog-footer">
+                            <button href="#">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="author">
+                                <span>ملاك بريمة</span>
+                                <div class="author-img">
+                                    <img src="assets/img/profiles/prof-2.png" alt="ملاك بريمة">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="single-blog.html">
+                <div class="blog-card">
+                    <div class="image">
+                        <p class="blog-category">نصائح</p>
+                        <img src="assets/img/pp.jpg" alt="نصائح شراء عقار">
+                    </div>
+                    <div class="info">
+                        <h3>أخطاء شائعة يجب تجنبها قبل شراء العقار</h3>
+                        <p>قبل ما تشتري أي عقار، تعرف على الأخطاء الشائعة التي يقع فيها المشترون الجدد وكيف تتجنبها
+                            بسهولة.</p>
+                        <hr>
+                        <div class="blog-footer">
+                            <button href="#">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="author">
+                                <span>حنان السيد</span>
+                                <div class="author-img">
+                                    <img src="assets/img/profiles/prof.png" alt="حنان السيد">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="single-blog.html">
+                <div class="blog-card">
+                    <div class="image">
+                        <p class="blog-category">الاستثمار</p>
+                        <img src="assets/img/apart.jpg" alt="استثمار عقاري السودان">
+                    </div>
+                    <div class="info">
+                        <h3>أفضل المناطق للاستثمار العقاري في السودان</h3>
+                        <p>اكتشف أكثر المناطق الواعدة في الخرطوم والعواصم الأخرى من حيث العائد الاستثماري وقيمة الأراضي
+                            والمشروعات الجديدة.</p>
+                        <hr>
+                        <div class="blog-footer">
+                            <button href="#">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="author">
+                                <span>يوسف السيد</span>
+                                <div class="author-img">
+                                    <img src="assets/img/profiles/prof-1.png" alt="يوسف السيد">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-contact container">
+            <div class="inner-contact">
+                <div>
+                    <h5>واتساب</h5>
+                    <a href="https://wa.me/249912345678"> تواصل مباشر</a>
+                </div>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="inner-contact">
+                <div>
+                    <h5>الهاتف</h5>
+                    <a href="tel:+249912345678">+249 91 234 5678</a>
+                </div>
+                <a href=""><i class="fa-solid fa-phone-flip"></i></a>
+            </div>
+           
+            <div class="inner-contact">
+                <div>
+                    <h5>البريد الإلكتروني</h5>
+                    <a href="mailto:info@soda-house.sd">info@soda-house.sd</a>
+                </div>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+
+
+
+        <div class="container inner-footer">
+            <div class="footer-box">
+                <img class="logo" src="assets/img/logo.png" alt="logo">
+                <p>
+                    <strong>سودا هاوس العقارية</strong> - نمنحك الثقة لاختيار العقار الأنسب لك، بيعًا أو شراءً أو
+                    استثمارًا في كل أنحاء السودان.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li class="active"><a href="#">الرئيسية</a></li>
+                    <li><a href="#">العقارات المتاحة</a></li>
+                    <li><a href="#">عن سودا هاوس</a></li>
+                    <li><a href="#">الخدمات العقارية</a></li>
+                    <li><a href="#">الأخبار والمدونة</a></li>
+            </div>
+
+            <div class="footer-box">
+                <h3>خدماتنا</h3>
+                <ul>
+                    <li><a href="#">بيع وشراء العقارات</a></li>
+                    <li><a href="#">تقييم العقارات</a></li>
+                    <li><a href="#">إدارة الأملاك</a></li>
+                    <li><a href="#">استشارات استثمارية</a></li>
+                    <li><a href="#">التسويق العقاري</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>النشرة البريدية</h3>
+                <form action="#">
+                    <input type="text" placeholder="أدخل بريدك الإلكتروني">
+                    <button class="btn-danger">اشترك</button>
+                </form>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; 2025 سودا هاوس العقارية
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+   
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+.footer {
+    background-color: $main-color;
+    padding-bottom: 30px;
+
+    .footer-contact {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        margin-bottom: 50px;
+        border-radius: 0 0 40px 40px;
+        border-top: 3px solid $secondary-color;
+        background-color: #e6e9ed;
+       @include media-up(md) {
+           @include flexbox(center, center );
+           gap: 20px;
+       }
+       @include flexbox(space-around, center , wrap);
+       
+       
+
+        .inner-contact {
+            @include flexbox(center, center, row-reverse);
+            gap: 10px;
+            margin: 10px 0;
+            @include media-up(md) {
+                @include flexbox(center, center, row-reverse);
+            gap: 10px;
+            }
+            div{
+                
+                h5{
+                     color: $main-color;
+                }
+            }
+            a {
+                
+
+                i {
+                    font-size: 30px;
+                    color: $secondary-color;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        scale: 1.2;
+                    }
+                }
+            }
+
+        }
+
+
+
+
+        div:nth-child(2) {
+            display: none;
+            @include media-up(md) {
+                 @include flexbox(center, center, row-reverse , wrap);
+                 
+            // border-right: 1px solid rgba(0, 0, 0, 0.2);
+            // border-left: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 0 20px;
+        }
+          
+           
+        }
+
+        
+    }
+
+
+    .inner-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+
+        .footer-box {
+           
+            .logo {
+                width: 150px;
+            }
+
+            h3 {
+                color: $secondary-color;
+                font-family: Almarai;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #e6e9ed;
+                font-size: 14px;
+                line-height: 1.8;
+            }
+
+            a {
+
+                color: #e6e9ed;
+                font-size: 14px;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+
+            li {
+                width: 100%;
+                padding-bottom: 10px; 
+                padding-right: 15px;               
+                @include media-up(md) {
+                    
+                    width: 70%;
+                }
+                margin-bottom: 10px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: "\f0da";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: bold;
+                    
+                    margin-right: -15px;
+                    color: $secondary-color;
+                    top: 50%;
+                        transform: translateY(-50%);
+                }
+            }
+
+            form {
+                @include flexbox(center, center, column);
+
+                input {
+                    width: 100%;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    background-color: #e6e9ed;
+                    height: 50px;
+                }
+
+                button {
+                    padding: 10px;
+                    width: 100%;
+                   color: #fff;
+                    border: none;
+                    
+                     background-color: $secondary-color;
+                    &:hover {
+                      scale: 1.02;
+                        
+                    }
+
+                }
+            }
+
+            .icons {
+                margin-top: 30px;
+                @include flexbox(center, center, row, wrap);
+                gap: 15px;
+
+                i {
+                    font-size: 25px;
+                    color: $secondary-color;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        scale: 1.2;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .copyright {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 13px;
+        color: #ccc;
+        font-family: Almarai;
+    }
+}

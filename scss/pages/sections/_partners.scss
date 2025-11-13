@@ -1,0 +1,31 @@
+.partners{
+    padding: 30px 0;
+    background-color: #fff;
+    .logos{
+        margin-top: 10px;
+       
+        padding: 0 20px;
+         @include media-up(md){
+         padding: 0 ;
+    }
+        @include flexbox();
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
+        gap: 30px;
+        .image{
+              @include image($width: 100px, $height: 100px, $overflow: hidden);
+               @include flexbox();
+                margin: auto;
+            img{
+                  @include img();
+                cursor: pointer;
+                filter: grayscale(1);
+                transition: 0.4s;
+                &:hover{
+                    filter: grayscale(0);
+                    
+                }
+            }
+        }
+    }
+}
